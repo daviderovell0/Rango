@@ -26,3 +26,4 @@ urlpatterns = [
     # the rango application
     url(r'^admin/', admin.site.urls),
 ]
+a
