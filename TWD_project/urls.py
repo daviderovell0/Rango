@@ -22,7 +22,7 @@ from Rango import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'^Rango/', include('Rango.urls')),
+    url(r'^rango/', include('Rango.urls')),
     # above maps any URLs starting
     # with rango/ to be handled by
     # the rango application
