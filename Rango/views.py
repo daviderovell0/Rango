@@ -3,6 +3,8 @@ from django.http import HttpResponse
 from Rango.models import Category
 from Rango.models import Page
 
+def about(request):
+    return render(request,"Rango/about.html")
 
 def show_category(request, categoryNameSlug):
     context_dict = {}
