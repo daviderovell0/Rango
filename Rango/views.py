@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from Rango.models import Category
 from Rango.models import Page
 from Rango.forms import CategoryForm
+from Rango.forms import PageForm
 
 def about(request):
     return render(request,"Rango/about.html")
@@ -40,3 +41,26 @@ def add_category(request):
         else:
             print(form.errors)
     return render(request,'Rango/add_category.html', {'form':form})
+
+
+def add_page(request, category_name_slug):
+    try:
+        category = Category.objects.get(slug=category_name_slug)
+    except Category.DoesNotExist:
+        category = None
+
+    form = PageForm()
+    if request.method == 'POST':
+        form = PageForm(request.POST)
+        if form.is_valid():
+            if category:
+                page = form.save(commit=False)
+                page.category = category
+                page.views = 0
+                page.save()
+                return show_category(request, category_name_slug)
+        else:
+            print(form.errors)
+
+    context_dict = {'form': form, 'category': category}
+    return render(request, 'Rango/add_page.html', context_dict)
