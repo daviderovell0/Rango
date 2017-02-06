@@ -1,8 +1,8 @@
-{% extends 'Rango.base.html'  %}
+{% extends 'Rango/base.html'  %}
 {% block title_block %}
 {{ category.name }}
 {% endblock %}
-{%  block body-block %}
+{%  block body_block %}
 <div>
     <a href="/rango">Home page</a><br><br>
     {% if category %}
@@ -23,3 +23,4 @@
 
     </div>
 {% endblock %}
+
