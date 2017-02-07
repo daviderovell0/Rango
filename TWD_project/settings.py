@@ -126,3 +126,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [STATIC_DIR,]
+
+# Redirect users trying to access rstricted page
+LOGIN_URL = '/rango/login/'

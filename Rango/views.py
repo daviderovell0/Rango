@@ -6,6 +6,8 @@ from Rango.models import Category
 from Rango.models import Page
 from Rango.forms import CategoryForm
 from Rango.forms import PageForm, UserForm, UserProfileForm
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout
 
 def about(request):
     return render(request,"Rango/about.html")
@@ -32,7 +34,8 @@ def index(request):
     # We make use of the shortcut function to make our lives easier.
     # Note that the first parameter is the template we wish to use.
     return render(request, 'Rango/index.html', context=context_dict)
-
+	
+@login_required
 def add_category(request):
     form = CategoryForm()
     if request.method == 'POST':
@@ -44,7 +47,7 @@ def add_category(request):
             print(form.errors)
     return render(request,'Rango/add_category.html', {'form':form})
 
-
+@login_required
 def add_page(request, category_name_slug):
     try:
         category = Category.objects.get(slug=category_name_slug)
@@ -114,3 +117,14 @@ def user_login(request):
             return HttpResponse("Invalid login details supplied.")
     else:
         return render(request, 'Rango/login.html', {})
+		
+@login_required
+def restricted(request):
+	return render(request, 'Rango/restricted.html', {})
+
+
+@login_required
+def user_logout(request):
+	logout(request)
+	return HttpResponseRedirect(reverse('index'))
+
