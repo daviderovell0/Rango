@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="258a27bc-4592-4303-9760-1b6594774475" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rango/models.py" afterPath="$PROJECT_DIR$/Rango/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Rango/about.html" afterPath="$PROJECT_DIR$/templates/Rango/about.html" />
     </list>
     <ignored path="TWD_project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Rango/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="119">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -128,7 +126,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Rango/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -165,7 +163,6 @@
         <option value="$PROJECT_DIR$/Rango/templatetags/rango_template_tags.py" />
         <option value="$PROJECT_DIR$/templates/Rango/cats.html" />
         <option value="$PROJECT_DIR$/TWD_project/settings.py" />
-        <option value="$PROJECT_DIR$/templates/Rango/about.html" />
         <option value="$PROJECT_DIR$/Rango/admin.py" />
         <option value="$PROJECT_DIR$/Rango/forms.py" />
         <option value="$PROJECT_DIR$/templates/Rango/register.html" />
@@ -176,6 +173,7 @@
         <option value="$PROJECT_DIR$/templates/Rango/base.html" />
         <option value="$PROJECT_DIR$/templates/Rango/index.html" />
         <option value="$PROJECT_DIR$/Rango/models.py" />
+        <option value="$PROJECT_DIR$/templates/Rango/about.html" />
       </list>
     </option>
   </component>
@@ -324,7 +322,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="H:/rango/Scripts/python.exe" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -793,7 +791,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486465002577</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Small fix">
+      <created>1486741059135</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1486741059135</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -850,7 +855,8 @@
     <MESSAGE value="Chapter 9.5" />
     <MESSAGE value="Chapter 9.6" />
     <MESSAGE value="Chapter 9.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chapter 9.7" />
+    <MESSAGE value="Small fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1163,14 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Rango/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/Rango/login.css" />
     <entry file="file://$PROJECT_DIR$/templates/Rango/register.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1236,6 +1234,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Rango/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding />
         </state>
       </provider>
