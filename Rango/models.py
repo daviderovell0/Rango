@@ -19,7 +19,7 @@ class Category(models.Model):
     def __str__(self):  # For Python 2, use __unicode__ too
         return self.name
     def __unicode__(self):
-        return self.title
+        return self.name
 
 
 class Page(models.Model):
